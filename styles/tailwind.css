@@ -80,7 +80,7 @@ textarea {
 }
 
 button {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.025rem;
 }
 
 /**
@@ -1425,6 +1425,21 @@ select {
 .bg-blueGray-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
+}
+
+.bg-blueGray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(203, 213, 225, var(--tw-bg-opacity));
+}
+
+.bg-blueGray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(148, 163, 184, var(--tw-bg-opacity));
+}
+
+.bg-blueGray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(100, 116, 139, var(--tw-bg-opacity));
 }
 
 .bg-blueGray-600 {
