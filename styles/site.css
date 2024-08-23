@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+:root {
+--main-color: #F472B6; /* Lavender Blush */
+--secondary-color-violet: #6D28D9; /* Hot Pink */
+--secondary-color-pink: #F8A5C2;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.homebg {
+  background-image: url('/images/bg/homeBg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.hand {
+  cursor:grab;
+}
+
+.nav-bg {
+    background-color: rgba(249, 205, 226, 0.55);
+}
+
+.card-bg {
+    height:600px;
+    background-color: #f7f2d4 !important;
+    background-image: url('/images/bg/cardBg.jpg');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.maincolor {
+    color:var(--main-color) !important;
+}
+
+.subcolor {
+    color:var(--secondary-color-pink) !important;
+}
+
+.mainbg {
+  background-color:var(--main-color) !important;
+}
+
+.subbg {
+  background-color:var(--secondary-color-pink) !important;
+}
+
+.editable-div {
+  min-height: 300px;
+  overflow-y:auto;
+  max-height: 300px;
+  background-color: #F7F7F7;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* 기본 스타일 제거 */
+  width: 100%; /* 너비 설정 */
+  height: 8px; /* 높이 설정 */
+  background: #ddd; /* 슬라이더 트랙의 배경색 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  outline: none; /* 클릭했을 때 파란 테두리 제거 */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* 기본 스타일 제거 */
+  appearance: none;
+  width: 20px; /* 썸의 너비 */
+  height: 20px; /* 썸의 높이 */
+  background: var(--main-color); /* 썸의 색상 */
+  cursor: pointer; /* 커서 변경 */
+  border-radius: 50%; /* 썸을 둥글게 */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background:  var(--main-color);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.bookcover {
+  width:100%;
+  padding:3px;
+  border:1px solid #EFEFEF;
+}
+
+.bookcover img {
+  width:100%;
+  height:auto;
+  min-height: 100px;
+}
+
+.form-text {
+  width:100%;
+  background-color: transparent;
+  border:none;
+  outline:none;
+}
+
+.form-textarea {
+  background-color: transparent;
+  outline:none;
+  overflow-y:scroll;
+  border:none;
+}
+
+.form-body {
+  position:relative;
+  height:calc(100% - 80px);
+  outline:none;
+}
+
+.form-bottom {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:80px;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color-pink); /* 스크롤바 핸들 색상 */
+  border-radius: 4px; /* 핸들의 둥글기 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2d3748; /* 핸들을 호버했을 때 색상 */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* 스크롤바 트랙 색상 */
+}
+
+.border-gray {
+  border-style: dashed;
+  border-color: #EFEFEF;
+}
+
+.noto-sans-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.noto-serif-kr {
+  font-family: 'Noto Serif KR', serif;
+}
+.spoqa-han-sans {
+  font-family: 'Spoqa Han Sans', sans-serif;
+}
+.nanum-gothic {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.nanum-myeongjo {
+  font-family: 'Nanum Myeongjo', serif;
+}
+.jua {
+  font-family: 'Jua', sans-serif;
+}
+.do-hyeon {
+  font-family: 'Do Hyeon', sans-serif;
+}
+.yoon-gothic {
+  font-family: 'Yoon Gothic', sans-serif;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.max-w-screen {
+  max-width: 100vw;
+}
+
