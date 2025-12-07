@@ -1,27 +1,125 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="index,follow"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="keywords" content="웹소설 작가, 웹소설 창작, AI 글쓰기 도구, 창작 플랫폼, 시놉시스 작성, 글쓰기 목표 설정, GN2Studio, 웹소설 초안 작성, AI 기반 창작 도구"/><meta name="description" content="GN2Studio는 웹소설 작가들을 위한 혁신적인 창작 플랫폼입니다. 글 작성 시 필요한 자료를 손쉽게 확인하고, AI의 도움을 받아 초안 작성과 의견을 받을 수 있습니다. 목표량 설정 및 시놉시스 작성 도구를 통해 체계적으로 웹소설을 완성해 보세요."/><meta name="author" content="https://www.gn2studio.com"/><link rel="icon" href="/favicon.ico"><title>GN2Studio - 웹소설 작가를 위한 AI 기반 창작 플랫폼</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/><link href="/styles/tailwind.css" rel="stylesheet"/><link href="/styles/site.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Spoqa+Han+Sans:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Jua:wght@400&family=Do+Hyeon:wght@400&family=Yoon+Gothic:wght@400;700&display=swap" rel="stylesheet"><meta property="og:type" content="website"><meta property="og:title" content="GN2Studio - 웹소설 작가를 위한 AI 기반 창작 플랫폼"><meta property="og:description" content="GN2Studio는 웹소설 작가들을 위한 혁신적인 창작 플랫폼입니다. 글 작성 시 필요한 자료를 손쉽게 확인하고, AI의 도움을 받아 초안 작성과 의견을 받을 수 있습니다. 목표량 설정 및 시놉시스 작성 도구를 통해 체계적으로 웹소설을 완성해 보세요."><meta property="og:image" content="https://www.gn2studio.com/SNS/sns_240822.png"><meta property="og:url" content="https://www.gn2studio.com"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="GN2Studio - 웹소설 작가를 위한 AI 기반 창작 플랫폼"><meta name="twitter:description" content="GN2Studio는 웹소설 작가들을 위한 혁신적인 창작 플랫폼입니다. 글 작성 시 필요한 자료를 손쉽게 확인하고, AI의 도움을 받아 초안 작성과 의견을 받을 수 있습니다. 목표량 설정 및 시놉시스 작성 도구를 통해 체계적으로 웹소설을 완성해 보세요."><meta name="twitter:image" content="https://www.gn2studio.com/SNS/sns_240822.png"><meta name="twitter:domain" content="https://www.gn2studio.com"><style>#loading {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    z-index: 9999;
-  }
+<!DOCTYPE html>
+<html lang="ko">
 
-  .spinner {
-    border: 8px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 8px solid #3498db;
-    width: 60px;
-    height: 60px;
-    animation: spin 2s linear infinite;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 키워드 분석 & AI 컨설턴트</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }</style><script defer="defer" src="/js/chunk-vendors.79ce3d3b.js"></script><script defer="defer" src="/js/app.996cbffb.js"></script></head><body class="text-blueGray-700 antialiased"><noscript><strong>We're sorry but gn2.marketting doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="firstloading"><div class="spinner"></div></div><div id="app"></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-KDQMRSH6GD"></script><script>window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KDQMRSH6GD');</script></body></html>
+<body>
+
+    <!-- Sidebar -->
+    <aside>
+        <h1>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+            </svg>
+            YouTube.GN2Studio
+        </h1>
+
+        <div class="input-group">
+            <label for="yt-api-key">YouTube Data API Key (필수)</label>
+            <input type="password" id="yt-api-key" placeholder="AIzaVy..." />
+        </div>
+
+        <div class="input-group">
+            <label for="gemini-api-key">Gemini API Key (선택)</label>
+            <input type="password" id="gemini-api-key" placeholder="입력 시 AI 분석 제공" />
+        </div>
+
+        <button class="btn-save" id="btn-save-settings">설정 저장</button>
+
+        <div style="margin-top: auto; font-size: 0.75rem; color: #6b7280;">
+            <p>데이터는 로컬 브라우저에만 저장됩니다.</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search -->
+        <div class="search-area">
+            <input type="text" id="search-input" placeholder="분석할 키워드를 입력하세요 (예: 스마트스토어, 여행 브이로그)" />
+            <button class="btn-search" id="btn-analyze">분석 시작</button>
+        </div>
+
+        <!-- Dashboard Wrapper (Hidden initially) -->
+        <div id="dashboard" class="hidden-section">
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card" style="border-left-color: #3b82f6;">
+                    <h3>총 조회수 (Top 20)</h3>
+                    <div class="value" id="stat-views">-</div>
+                    <div class="sub-text">상위 영상 합계</div>
+                </div>
+                <div class="stat-card" style="border-left-color: #ec4899;">
+                    <h3>평균 좋아요</h3>
+                    <div class="value" id="stat-likes">-</div>
+                    <div class="sub-text">영상 당 평균</div>
+                </div>
+                <div class="stat-card" style="border-left-color: #f59e0b;">
+                    <h3>추정 경쟁 강도</h3>
+                    <div class="value" id="stat-competition">-</div>
+                    <div class="sub-text" id="stat-competition-desc">-</div>
+                </div>
+                <div class="stat-card" style="border-left-color: #10b981;">
+                    <h3>상위 채널 평균 구독자</h3>
+                    <div class="value" id="stat-subs">-</div>
+                    <div class="sub-text">진입 장벽 지표</div>
+                </div>
+            </div>
+
+            <!-- AI Report -->
+            <div class="ai-section" id="ai-section">
+                <div class="ai-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 14a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm1-4.33A2.5 2.5 0 0 0 13.5 9a2.5 2.5 0 0 0-5 0V9" />
+                    </svg>
+                    <h3>Gemini AI 전략 컨설턴트</h3>
+                </div>
+                <div class="ai-content" id="ai-content">AI 분석 결과를 기다리는 중...</div>
+            </div>
+
+            <!-- Recommended Tags -->
+            <div class="tags-section">
+                <h3 style="margin-bottom: 10px; font-size: 1rem; color: var(--text-main);">🔥 추천 태그 (빈도순 Best 10)</h3>
+                <div class="tag-cloud" id="tag-cloud">
+                    <!-- Tags will be injected here -->
+                </div>
+            </div>
+
+            <!-- Detailed Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>영상</th>
+                            <th>제목 / 채널</th>
+                            <th>구독자수</th>
+                            <th>조회수</th>
+                            <th>좋아요</th>
+                            <th>게시일</th>
+                        </tr>
+                    </thead>
+                    <tbody id="video-table-body">
+                        <!-- Rows will be injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loader-overlay" id="loader">
+        <div class="spinner"></div>
+        <div class="loading-text">데이터 수집 및 분석 중입니다...</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
